@@ -1,4 +1,5 @@
 <template>
+<div>
   <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
   <p v-else>Estou em busca de novas oportunidades!</p>
   <p>Utilizo as seguintes tecnologias:</p>
@@ -13,6 +14,8 @@
   <p v-show="mostrar_email">Mande uma mensagem para: matheus@email.com</p>
   <p>Para acessar meu portfólio <a v-bind:href="url_portfolio">basta clicar aqui</a></p>
   <Picture />
+</div>
+
 </template>
 <script>
 import Picture from './Picture'
